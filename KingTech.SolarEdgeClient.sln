@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KingTech.SolarEdgeClient.CloudApi.NuGet", "KingTech.SolarEdgeClient.CloudApi.NuGet\KingTech.SolarEdgeClient.CloudApi.NuGet.csproj", "{B5075C77-93F3-4456-AEEB-79C3A737F2E7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KingTech.SolarEdgeClient.UnitTests", "KingTech.SolarEdgeClient.UnitTests\KingTech.SolarEdgeClient.UnitTests.csproj", "{A51B5E7F-FA92-4B03-8488-45B2C7891B5A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KingTech.SolarEdgeClient.Modbus.NuGet", "KingTech.SolarEdgeClient.Modbus.NuGet\KingTech.SolarEdgeClient.Modbus.NuGet.csproj", "{682FDE8A-9612-4685-B277-55DF8EF76525}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution items", "Solution items", "{5390A168-9B44-49E0-94D5-C564652F8430}"
+	ProjectSection(SolutionItems) = preProject
+		README.MD = README.MD
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KingTech.SolarEdgeClient.Modbus.DataLogger", "KingTech.SolarEdgeClient.Modbus.DataLogger\KingTech.SolarEdgeClient.Modbus.DataLogger.csproj", "{6D862AC0-704E-46BF-8555-635ED5B0AD47}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B5075C77-93F3-4456-AEEB-79C3A737F2E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5075C77-93F3-4456-AEEB-79C3A737F2E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5075C77-93F3-4456-AEEB-79C3A737F2E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5075C77-93F3-4456-AEEB-79C3A737F2E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A51B5E7F-FA92-4B03-8488-45B2C7891B5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A51B5E7F-FA92-4B03-8488-45B2C7891B5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A51B5E7F-FA92-4B03-8488-45B2C7891B5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A51B5E7F-FA92-4B03-8488-45B2C7891B5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{682FDE8A-9612-4685-B277-55DF8EF76525}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{682FDE8A-9612-4685-B277-55DF8EF76525}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{682FDE8A-9612-4685-B277-55DF8EF76525}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{682FDE8A-9612-4685-B277-55DF8EF76525}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D862AC0-704E-46BF-8555-635ED5B0AD47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D862AC0-704E-46BF-8555-635ED5B0AD47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D862AC0-704E-46BF-8555-635ED5B0AD47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D862AC0-704E-46BF-8555-635ED5B0AD47}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8CC890E1-F0EA-4ADF-BBBF-96FCE1532E6E}
+	EndGlobalSection
+EndGlobal
