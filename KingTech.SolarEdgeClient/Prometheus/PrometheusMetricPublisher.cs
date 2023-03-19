@@ -33,6 +33,7 @@ public class PrometheusMetricPublisher
     /// </summary>
     public void Start()
     {
+        _logger.LogInformation("Starting prometheus publisher.");
         _messageBroker.Subscribe(HandleMessage);
     }
 
@@ -41,6 +42,7 @@ public class PrometheusMetricPublisher
     /// </summary>
     public void Stop()
     {
+        _logger.LogInformation("Stopping prometheus publisher.");
         _messageBroker.Unsubscribe(HandleMessage);
     }
 
@@ -54,8 +56,10 @@ public class PrometheusMetricPublisher
         {
             //handle new inverter messages.
             case Inverter inverter:
+                _logger.LogTrace("Handling new inverter data {@Inverter}", inverter);
                 if (!_inverterMetrics.TryGetValue(inverter.DeviceIdentifier, out var inverterMetrics))
                 {
+                    _logger.LogInformation("Creating new inverter {inverter}.", inverter.DeviceIdentifier);
                     inverterMetrics = new InverterMetrics(inverter.DeviceIdentifier);
                     _inverterMetrics.Add(inverter.DeviceIdentifier, inverterMetrics);
                 }
@@ -63,8 +67,10 @@ public class PrometheusMetricPublisher
                 break;
             //Handle new meter messages.
             case Meter meter:
+                _logger.LogTrace("Handling new meter data {@Meter}", meter);
                 if (!_meterMetrics.TryGetValue(meter.DeviceIdentifier, out var meterMetrics))
                 {
+                    _logger.LogInformation("Creating new meter {meter}.", meter.DeviceIdentifier);
                     meterMetrics = new MeterMetrics(meter.DeviceIdentifier);
                     _meterMetrics.Add(meter.DeviceIdentifier, meterMetrics);
                 }
@@ -72,8 +78,10 @@ public class PrometheusMetricPublisher
                 break;
             //Handle new battery messages.
             case Battery battery:
+                _logger.LogTrace("Handling new battery data {@Battery}", battery);
                 if (!_batteryMetrics.TryGetValue(battery.DeviceIdentifier, out var batteryMetrics))
                 {
+                    _logger.LogInformation("Creating new battery {battery}.", battery.DeviceIdentifier);
                     batteryMetrics = new BatteryMetrics(battery.DeviceIdentifier);
                     _batteryMetrics.Add(battery.DeviceIdentifier, batteryMetrics);
                 }

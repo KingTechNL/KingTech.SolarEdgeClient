@@ -1,6 +1,4 @@
-using System.Text.Json.Serialization;
 using KingTech.SolarEdgeClient.Modbus.Devices;
-using KingTech.SolarEdgeClient.Modbus.Reader.Attributes;
 
 namespace KingTech.SolarEdgeClient.Contracts;
 

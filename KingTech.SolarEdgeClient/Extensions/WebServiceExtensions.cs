@@ -1,6 +1,4 @@
-﻿using KingTech.SolarEdgeClient.Extensions;
-
-namespace KingTech.SolarEdgeClient.Extensions;
+﻿namespace KingTech.SolarEdgeClient.Extensions;
 
 /// <summary>
 /// Extension methods for WebApplicationBuilder registration and configuration.
