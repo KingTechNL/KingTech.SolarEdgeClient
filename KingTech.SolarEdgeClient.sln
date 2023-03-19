@@ -7,14 +7,16 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KingTech.SolarEdgeClient.Cl
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KingTech.SolarEdgeClient.UnitTests", "KingTech.SolarEdgeClient.UnitTests\KingTech.SolarEdgeClient.UnitTests.csproj", "{A51B5E7F-FA92-4B03-8488-45B2C7891B5A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KingTech.SolarEdgeClient.Modbus.NuGet", "KingTech.SolarEdgeClient.Modbus.NuGet\KingTech.SolarEdgeClient.Modbus.NuGet.csproj", "{682FDE8A-9612-4685-B277-55DF8EF76525}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KingTech.SolarEdgeClient.Modbus.NuGet", "KingTech.SolarEdgeClient.Modbus.NuGet\KingTech.SolarEdgeClient.Modbus.NuGet.csproj", "{682FDE8A-9612-4685-B277-55DF8EF76525}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution items", "Solution items", "{5390A168-9B44-49E0-94D5-C564652F8430}"
 	ProjectSection(SolutionItems) = preProject
 		README.MD = README.MD
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KingTech.SolarEdgeClient.Modbus.DataLogger", "KingTech.SolarEdgeClient.Modbus.DataLogger\KingTech.SolarEdgeClient.Modbus.DataLogger.csproj", "{6D862AC0-704E-46BF-8555-635ED5B0AD47}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KingTech.SolarEdgeClient.Modbus.DataLogger", "KingTech.SolarEdgeClient.Modbus.DataLogger\KingTech.SolarEdgeClient.Modbus.DataLogger.csproj", "{6D862AC0-704E-46BF-8555-635ED5B0AD47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KingTech.SolarEdgeClient", "KingTech.SolarEdgeClient\KingTech.SolarEdgeClient.csproj", "{17E8A708-A5DC-4281-ADF3-5DF162DCEE3E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -38,6 +40,10 @@ Global
 		{6D862AC0-704E-46BF-8555-635ED5B0AD47}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6D862AC0-704E-46BF-8555-635ED5B0AD47}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6D862AC0-704E-46BF-8555-635ED5B0AD47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17E8A708-A5DC-4281-ADF3-5DF162DCEE3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17E8A708-A5DC-4281-ADF3-5DF162DCEE3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17E8A708-A5DC-4281-ADF3-5DF162DCEE3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17E8A708-A5DC-4281-ADF3-5DF162DCEE3E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
