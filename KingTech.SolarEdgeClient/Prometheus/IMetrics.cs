@@ -15,13 +15,11 @@ public interface IMetrics<TModel>
     public void SetValues(TModel? data);
 }
 
+/// <inheritdoc/>
 public abstract class ABaseMetrics<TModel> : IMetrics<TModel>
     where TModel : class
 {
-    /// <summary>
-    /// Set values for metric endpoints.
-    /// </summary>
-    /// <param name="data">The <see cref="TModel"/> to set values for.</param>
+    /// <inheritdoc/>
     public abstract void SetValues(TModel? data);
 
     /// <summary>

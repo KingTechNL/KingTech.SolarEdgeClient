@@ -1,10 +1,9 @@
-﻿using KingTech.SolarEdgeClient.Contracts;
-using KingTech.SolarEdgeClient.Modbus.Devices;
+﻿using KingTech.SolarEdgeClient.Modbus.Devices;
 using Prometheus;
 
 namespace KingTech.SolarEdgeClient.Prometheus;
 
-public class BatteryMetrics : ABaseMetrics<BatteryContract>
+public class BatteryMetrics : ABaseMetrics<Battery>
 {
     private readonly string _serialNumber;
     
@@ -37,7 +36,7 @@ public class BatteryMetrics : ABaseMetrics<BatteryContract>
     }
 
     /// <inheritdoc/>
-    public override void SetValues(BatteryContract? data)
+    public override void SetValues(Battery? data)
     {
         if (data == null)
             return;

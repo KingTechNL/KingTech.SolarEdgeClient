@@ -1,9 +1,9 @@
-﻿using KingTech.SolarEdgeClient.Contracts;
+﻿using KingTech.SolarEdgeClient.Modbus.Devices;
 using Prometheus;
 
 namespace KingTech.SolarEdgeClient.Prometheus;
 
-public class InverterMetrics : ABaseMetrics<InverterContract>
+public class InverterMetrics : ABaseMetrics<Inverter>
 {
     private readonly string _serialNumber;
 
@@ -43,7 +43,7 @@ public class InverterMetrics : ABaseMetrics<InverterContract>
     }
 
     /// <inheritdoc/>
-    public override void SetValues(InverterContract? data)
+    public override void SetValues(Inverter? data)
     {
         if (data == null)
             return;
